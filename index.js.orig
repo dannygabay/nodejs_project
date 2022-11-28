@@ -17,8 +17,8 @@ exec("pwd", (error, stdout, stderr) => {
 
 
 const fs = require('fs')
-const SSL_KEY = fs.readFileSync('key.pem')
-const SSL_CERT = fs.readFileSync('cert.pem')
+const SSL_KEY = fs.readFileSync('./certificate/key.pem')
+const SSL_CERT = fs.readFileSync('./certificate/cert.pem')
 const https = require('https')
 const port = 3000
 
